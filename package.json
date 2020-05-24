@@ -1,0 +1,23 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "css": "postcss src/styles/ -o dist/main.min.css",
+    "js": "uglifyjs src/scripts/index.js -o dist/main.min.js",
+    "build": "npm run js | npm run css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "postcss": "^7.0.5",
+    "postcss-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "cssnano": "^4.1.8",
+    "uglify-es": "^3.3.9"
+  },
+  "keywords": [],
+  "description": ""
+}
